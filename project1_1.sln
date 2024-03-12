@@ -1,31 +1,22 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34622.214
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "project1_1", "project1_1\project1_1.vcxproj", "{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Debug|x64.ActiveCfg = Debug|x64
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Debug|x64.Build.0 = Debug|x64
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Debug|x86.ActiveCfg = Debug|Win32
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Debug|x86.Build.0 = Debug|Win32
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Release|x64.ActiveCfg = Release|x64
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Release|x64.Build.0 = Release|x64
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Release|x86.ActiveCfg = Release|Win32
-		{6CA887B8-D46C-4B28-85CE-62A7D8ED5901}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6FBA9F37-91D4-4C91-B5FD-723C35888FC0}
-	EndGlobalSection
-EndGlobal
+#include <stdio.h>
+int main(void) {
+
+
+	char string1[4][20] = { "Korea","Seoul","Mapo","152번지2/3" };
+	char string2[4][20] = { "Korea","Seoul","Jongno","152번지2/3" };
+	
+	for (int i = 0; i <= 3; i++) {
+
+		printf("%s\n", string1[i]);
+	}
+	
+	printf("\n\n");
+
+	for (int j = 0; j <= 3; j++) {
+
+		printf("%s\n", string2[j]);
+	}
+
+	return 0;
+
+}
